@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .screen-max-width {
+    
+    margin-inline-end: auto;
+    position: relative;
+    max-width: 1120px;
+  }
+  
+  
+
+/* body {
+    
+    background: radial-gradient(ellipse at 50% 50%, #C5F2AE 0%, #4D8C2D 0%, #4D8C2D 31.67%, #326916 68.64%, #25590B 100%, #4D8C2D 100%);
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+} */
+
+@layer utilities {
+  .logo-Text {
+    @apply text-white sm:text-[20px] text-[14px] font-normal font-['Lato']  
+  }
+  .title-Text {
+    @apply text-white sm:text-[60px] text-[40px] font-extrabold font-['Lato'] opacity-0 -translate-y-20
+  }
+  .header-Text {
+    @apply  text-white sm:text-[40px] text-[25px]  font-normal font-['OpenSans'] opacity-0 -translate-y-20
+  }
+  .product-title{
+    @apply  text-white sm:text-[43px] text-[30px]  font-extrabold font-['Lato'] 
+    opacity-0
+  }
+  .feature-text-container {
+    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-4
+  }
+  .feature-video {
+    @apply w-full h-full object-cover object-center scale-150 opacity-0
+  }
+
+  .feature-video-container {
+    @apply w-full flex flex-col md:flex-row gap-0 items-center 
+  }
+  .feature-text {
+    @apply text-gray-100 max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+  }
+  .farm{
+    @apply  sm:text-[43px] text-[30px]  font-extrabold font-['Lato'] 
+    text-lime-200 opacity-0
+  }
+  .video-carousel_container {
+    @apply relative  sm:w-[55vw] w-[88vw] md:h-[50vh] sm:h-[50vh] h-[22vh] opacity-0
+  }
+  .common-padding {
+    @apply sm:py-32 py-20 sm:px-10 px-5
+  }
+  .color-container {
+    @apply flex items-center justify-center px-4 py-4 rounded-full  bg-black backdrop-blur
+  }
+  .size-btn-container {
+    @apply flex items-center justify-center p-2 rounded-full  bg-black backdrop-blur ml-4 gap-1
+  }
+  .size-btn {
+    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all
+  }
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+  .control-btn {
+    @apply ml-4 p-4 rounded-full bg-black backdrop-blur flex-center
+  }
+}
+/* // At 
+text-white
+text-[29px]
+font-normal
+font-['Open
+Sans']
+---
+// GreenBite
+text-lime-200
+text-[29px]
+font-semibold
+font-['Open
+Sans']
+---
+// , we're passionate about bringing you the freshest organic produce and health-conscious meal kits right to your doorstep. Experience the convenience of healthy living today.
+text-white
+text-[29px]
+font-normal
+font-['Open
+Sans'] */
